@@ -3,9 +3,12 @@ package com.taotao.mapper;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemExample;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Component
 public interface TbItemMapper {
     int countByExample(TbItemExample example);
 
